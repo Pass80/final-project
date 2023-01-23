@@ -1,0 +1,47 @@
+.carousel-container {
+    position: relative;
+    width: 100%;
+    padding-block: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.carousel-cards-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.previous-btn,
+.next-btn {
+    display: inline-block;
+    background-color: transparent;
+    position: absolute;
+    font-size: 3rem;
+    top: 50%;
+    border-radius: 3rem;
+    border: none;
+    cursor: pointer;
+}
+
+.previous-btn {
+    left: 0;
+    transform: translate(-60%, -50%);
+}
+
+.previous-btn:active {
+    transform: translate(-65%, -50%);
+}
+
+.next-btn {
+    right: 0;
+    transform: translate(+60%, -50%);
+}
+
+.next-btn:active {
+    transform: translate(+65%, -50%);
+}
+
+.next,
+.previous {
+    color: #cbd4de;
+}

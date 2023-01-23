@@ -1,0 +1,13 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #fbfbfb;
+    --active-color: #70b9be;
+    --inactive-color: #97a2b0;
+    --text-color: #0a2533;
+    --font-size-bg: 3rem;
+    --font-size-sm: 2rem;
+    --padding-bg: 2rem;
+    --padding-sm: 1rem;
+    --margin-bg: 2rem;
+    --margin-sm: 1rem;
+}
