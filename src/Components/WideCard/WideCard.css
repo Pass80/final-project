@@ -1,0 +1,64 @@
+@import '../../variables.css';
+
+.wide-card {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.image-container1 {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 1rem;
+}
+
+.wide-card img {
+    width: 8rem;
+    height: 8rem;
+    object-fit: contain;
+    border-radius: 1rem;
+}
+
+.category-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.category-name span {
+    /* color: var(--inactive); */
+}
+
+.meal-infos {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.blue-point {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: var(--active-color);
+}
+
+.details-arrow {
+    font-size: 2rem;
+}
+
+.details-arrow:active {
+    position: relative;
+    right: -0.1rem;
+}
+
+.details-arrow-link {
+    all: unset;
+}

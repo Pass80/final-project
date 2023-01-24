@@ -5,6 +5,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import WelcomePage from './Pages/WelcomePage/WelcomePage';
 import CategoryPage from './Pages/CategoryPage/CategoryPage';
 import AreasPage from './Pages/AreasPage/AreasPage';
+import SearchPage from './Pages/SearchPage/SearchPage';
 
 function App() {
     return (
@@ -19,6 +20,7 @@ function App() {
                         element={<CategoryPage />}
                     ></Route>
                     <Route path="/area/:id" element={<AreasPage />}></Route>
+                    <Route path="/search" element={<SearchPage />} />
                 </Routes>
             </div>
         </BrowserRouter>

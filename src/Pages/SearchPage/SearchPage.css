@@ -1,0 +1,21 @@
+.search-page {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.searchHeader {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.search-results {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-block: 2rem;
+    margin-bottom: 10rem;
+}
