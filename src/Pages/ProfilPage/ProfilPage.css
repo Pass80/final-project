@@ -1,0 +1,14 @@
+.profilPage .profilImg {
+  width: 80vw;
+  max-width: 300px;
+  border-radius: 50%;
+  overflow: hidden;
+  aspect-ratio: 1/1;
+  margin: 1rem auto;
+}
+.profilPage .profilImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=ProfilPage.css.map */

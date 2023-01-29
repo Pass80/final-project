@@ -15,7 +15,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: .5rem;
     padding-block: 2rem;
     margin-bottom: 10rem;
 }

@@ -9,16 +9,20 @@ import { useEffect } from 'react';
 import SmallCard from '../../Components/SmallCard/SmallCard';
 import Carousel from '../../Components/Carousel/Carousel';
 import { HiArrowNarrowLeft } from 'react-icons/hi';
-import { fetchAreas, fetchMealSorts } from '../../Services/Services';
+import { fetchAreas } from '../../Services/Services';
 import { Link } from 'react-router-dom';
+import WideCard from '../../Components/WideCard/WideCard';
 
 const CategoryPage = () => {
     const [selectedCategory, setSelectedCategory] = useState();
-    const [mealSort, setMealSort] = useState();
+    // const [mealSort, setMealSort] = useState();
     const [areas, setAreas] = useState();
+    const [searchResults, setSearchResults] = useState(null);
 
     const params = useParams();
 
+    // Diese Funktion sendet eine Anfrage und gibt ein Array von Objekten zurück,
+    // die zur selben Mealkategorie gehören
     const fetchSelectedCategory = async (name) => {
         const { data } = await axios.get(
             `https://www.themealdb.com/api/json/v1/1/filter.php?c=${name}`
@@ -31,8 +35,8 @@ const CategoryPage = () => {
             const areas = await fetchAreas();
             setAreas(areas);
 
-            const sorts = await fetchMealSorts();
-            setMealSort(sorts);
+            // const sorts = await fetchMealSorts();
+            // setMealSort(sorts);
         }
         fetchData();
         // eslint-disable-next-line
@@ -49,21 +53,35 @@ const CategoryPage = () => {
                     <Link className="back-arrow-link" to={'/main'}>
                         <HiArrowNarrowLeft className="back_arrow" />
                     </Link>
-                    <h1>Search</h1>
+                    {/* <h2>Search</h2> */}
                 </div>
+                <SearchBar setSearchResults={setSearchResults} />
             </header>
-            <SearchBar />
-            {selectedCategory && (
+
+            {searchResults && (
+                <section className="search-results">
+                    {/* Wenn der searchResults-Wert nicht null ist, werden die Karten 
+                     mit den Suchergebnissen gezeigt. */}
+                    {searchResults &&
+                        searchResults.map((meal) => (
+                            <WideCard key={meal.idMeal} meal={meal} />
+                        ))}
+                </section>
+            )}
+            {/* Wenn der searchResults-Wert  null ist, 
+             wird der Area Abschnitt gezeigt. */}
+            {selectedCategory && !searchResults && (
                 <section className="areas-section">
                     <div className="title">
-                        <h2>Areas</h2>
-                        <h3>See All</h3>
+                        <h3>Areas</h3>
+                        <p className="seeAll">See All</p>
                     </div>
                     <Carousel data={areas} button={true} type1={true} />
                 </section>
             )}
-
-            {selectedCategory && (
+            {/* Wenn der searchResults-Wert  null ist, 
+             wird der Area Abschnitt gezeigt. */}
+            {selectedCategory && !searchResults && (
                 <section className="results-section">
                     {selectedCategory?.map((meal, index) => (
                         <SmallCard meal={meal} key={index} />

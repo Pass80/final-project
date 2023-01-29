@@ -1,19 +1,28 @@
-@import url('../../variables.css');
-.main-page {
-    background-color: #f1f5f5;
-    width: 90%;
-    height: 100vh;
-    padding-top: 2rem;
-    margin: 0 auto;
+@import url("../../variables.css");
+.main-page main {
+	background-color: #f1f5f5;
+	width: 90%;
+	height: calc(100vh - 6.5rem);
+	padding-top: 1rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	overflow: hidden;
+}
+main h3 {
+	padding-block: 0.5rem;
 }
 
 .title {
-    margin-top: 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.title h3 {
-    color: var(--active-color);
+.title .seeAll {
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: var(--active-color);
+	cursor: pointer;
 }

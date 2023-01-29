@@ -10,10 +10,12 @@ import Carousel from '../../Components/Carousel/Carousel';
 import { fetchMealSorts } from '../../Services/Services';
 import { HiArrowNarrowLeft } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
+import WideCard from '../../Components/WideCard/WideCard';
 
 const AreasPage = () => {
     const [selectedArea, setSelectedArea] = useState();
     const [mealSort, setMealSort] = useState();
+    const [searchResults, setSearchResults] = useState(null);
 
     const params = useParams();
 
@@ -43,18 +45,28 @@ const AreasPage = () => {
                     <Link className="back-arrow-link" to={'/main'}>
                         <HiArrowNarrowLeft className="back_arrow" />
                     </Link>
-                    <h1>Search</h1>
+                    {/* <h2>Search</h2> */}
                 </div>
             </header>
-            <SearchBar />
-            <section className="areas-section">
+            <SearchBar setSearchResults={setSearchResults} />
+            {searchResults && (
+                <section className="search-results">
+                    {/* Wenn der searchResults-Wert nicht null ist, werden die Karten 
+            mit den Suchergebnissen gezeigt. */}
+                    {searchResults &&
+                        searchResults.map((meal) => (
+                            <WideCard key={meal.idMeal} meal={meal} />
+                        ))}
+                </section>
+            )}
+            {selectedArea && !searchResults &&( <section className="areas-section">
                 <div className="title">
-                    <h2>Categories</h2>
-                    <h3>See All</h3>
+                    <h3>Categories</h3>
+                    <p className='seeAll'>See All</p>
                 </div>
                 <Carousel data={mealSort} button={true} type2={true} />
-            </section>
-            {selectedArea && (
+            </section>)}
+            {selectedArea && !searchResults && (
                 <section className="results-section">
                     {selectedArea?.map((meal, index) => (
                         <SmallCard meal={meal} key={index} />
@@ -67,3 +79,4 @@ const AreasPage = () => {
 };
 
 export default AreasPage;
+
