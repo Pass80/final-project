@@ -1,0 +1,33 @@
+.mealOfDay {
+  margin: 1rem auto;
+  max-width: 300px;
+  width: 80vw;
+}
+.mealOfDay h4 {
+  text-align: start;
+  margin-bottom: 1rem;
+}
+.mealOfDay > div {
+  margin: 0 auto;
+  background-position: bottom;
+  background-size: cover;
+  border-radius: 25px;
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 2fr 1fr 1fr;
+}
+.mealOfDay > div h5 {
+  padding: 0 1rem;
+  font-size: 1.25rem;
+  background-color: #3da0a7;
+  color: #fff;
+}
+.mealOfDay > div > div:last-of-type {
+  background-color: #3da0a7;
+  color: #fff;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.75rem;
+}/*# sourceMappingURL=MealOfTheDay.css.map */

@@ -11,13 +11,13 @@ const SearchPage = () => {
     const [searchResults, setSearchResults] = useState(null);
 
     return (
-        <section className="search-page">
+        <section className="search-page ">
             <div className="searchHeader">
-                <div className="header-container">
+                <div className="header-container searching">
                     <Link className="back-arrow-link" to={'/main'}>
                         <HiArrowNarrowLeft className="back_arrow" />
                     </Link>
-                    <h1>Suchen</h1>
+                    <h1>Search</h1>
                 </div>
             </div>
             {/* Hier wird die setSearchResults-Funktion als Props 

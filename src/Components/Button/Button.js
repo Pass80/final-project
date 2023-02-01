@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Button = ({ button }) => {
     return (
         <>
-            {/* Dies wird das Komponente bedingt gemäß den Daten, die es erhält,
+             {/* Dies wird das Komponente bedingt gemäß den Daten, die es erhält,
             rendern. Entweder areas Buttons wird gezeigt oder Categories buttons */}
             {button.strArea && (
                 <Link className="btn-link" to={`/area/${button.strArea}`}>

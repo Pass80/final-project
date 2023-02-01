@@ -1,28 +1,35 @@
-@import url("../../variables.css");
+@import url('../../variables.css');
 .main-page main {
-	background-color: #f1f5f5;
-	width: 90%;
-	height: calc(100vh - 6.5rem);
-	padding-top: 1rem;
-	margin: 0 auto;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	overflow: hidden;
+    background-color: #f1f5f5;
+    width: 90%;
+    /* height: calc(100vh - 6.5rem); */
+    padding-top: 6rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* overflow: hidden; */
 }
+
 main h3 {
-	padding-block: 0.5rem;
+    font-size: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 }
 
 .title {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .title .seeAll {
-	font-size: 1.25rem;
-	font-weight: 600;
-	color: var(--active-color);
-	cursor: pointer;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--active-color);
+    cursor: pointer;
+}
+
+.areas-section {
+    padding-block: 1rem;
 }

@@ -11,6 +11,7 @@ import { fetchMealSorts } from '../../Services/Services';
 import { HiArrowNarrowLeft } from 'react-icons/hi';
 import { Link } from 'react-router-dom';
 import WideCard from '../../Components/WideCard/WideCard';
+import SmallButton from '../../Components/SmallButton/SmallButton';
 
 const AreasPage = () => {
     const [selectedArea, setSelectedArea] = useState();
@@ -45,7 +46,7 @@ const AreasPage = () => {
                     <Link className="back-arrow-link" to={'/main'}>
                         <HiArrowNarrowLeft className="back_arrow" />
                     </Link>
-                    {/* <h2>Search</h2> */}
+                    <h2>Areas</h2>
                 </div>
             </header>
             <SearchBar setSearchResults={setSearchResults} />
@@ -59,13 +60,16 @@ const AreasPage = () => {
                         ))}
                 </section>
             )}
-            {selectedArea && !searchResults &&( <section className="areas-section">
-                <div className="title">
-                    <h3>Categories</h3>
-                    <p className='seeAll'>See All</p>
-                </div>
-                <Carousel data={mealSort} button={true} type2={true} />
-            </section>)}
+            {selectedArea && !searchResults && (
+                <section className="areas-section">
+                    <div className="title sm-btn">
+                        <h3>Categories</h3>
+                        {/* <p className="seeAll">See All</p> */}
+                        <SmallButton />
+                    </div>
+                    <Carousel data={mealSort} button={true} type2={true} />
+                </section>
+            )}
             {selectedArea && !searchResults && (
                 <section className="results-section">
                     {selectedArea?.map((meal, index) => (
@@ -79,4 +83,3 @@ const AreasPage = () => {
 };
 
 export default AreasPage;
-

@@ -1,3 +1,17 @@
+@import url("../../variables.css");
+
+/* .button button {
+
+    padding: .5rem 1rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 0 10px 2px lightgray;
+    width: calc(100% - 4rem);
+    margin: 0 2rem;
+} */
+
 .element-btn {
     display: flex;
     justify-content: center;
@@ -8,6 +22,10 @@
     background-color: #cbd4de;
     border: none;
     cursor: pointer;
+}
+.element-btn:hover {
+    background-color: var(--active-color);
+    color: var(--primary-color);
 }
 
 .btn-link {

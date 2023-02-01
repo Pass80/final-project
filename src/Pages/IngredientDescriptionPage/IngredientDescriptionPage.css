@@ -1,0 +1,35 @@
+.back-arrow-link2 {
+    all: unset;
+    margin: 2rem;
+}
+
+.in-container {
+    width: 100%;
+    padding-bottom: 8rem;
+}
+
+.in-container img {
+    width: 100%;
+}
+
+.description-article {
+    padding: 3rem;
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+    width: 90%;
+    padding: 4rem 2rem;
+    margin: 0 auto;
+    box-shadow: 0px 2px 16px rgba(6, 51, 54, 0.1);
+    border-radius: 16px;
+    background: var(--primary-color);
+    font-weight: bold;
+    white-space: pre-line;
+}
+
+.no-description {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+}

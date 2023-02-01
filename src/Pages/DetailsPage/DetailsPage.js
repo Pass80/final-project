@@ -1,5 +1,5 @@
 import NavBar from '../../Components/NavBar/NavBar';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { useState, useEffect, useRef, useCallback } from 'react';
 import './DetailsPage.css';
 
@@ -62,7 +62,7 @@ const DetailsPage = () => {
                 filterMealObject(selectedMeal);
                 setMeal(selectedMeal);
             });
-    }, [mealId, measures, ingredients]);
+    }, [mealId]);
 
     // Erstellen einer Funktion,dass das meal im localStorage  Speichert ,
     // um es später in der Favoritenliste anzuzeigen
@@ -74,7 +74,7 @@ const DetailsPage = () => {
 
     useEffect(() => {
         fetchMealById();
-    }, [params.id]);
+    }, [params.id, fetchMealById]);
 
     return (
         <>
@@ -131,12 +131,20 @@ const DetailsPage = () => {
                                 {meal && (
                                     <>
                                         {measures.map((measure, index) => (
-                                            <div className="ingredient-container">
+                                            <div
+                                                className="ingredient-container"
+                                                key={index}
+                                            >
                                                 <div className="ingredient-title">
                                                     <span>{measure}</span>
-                                                    <p key={index}>
-                                                        {ingredients[index]}
-                                                    </p>
+                                                    <Link
+                                                        className="ingredient-link"
+                                                        to={`/description/${ingredients[index]}`}
+                                                    >
+                                                        <p>
+                                                            {ingredients[index]}
+                                                        </p>
+                                                    </Link>
                                                 </div>
 
                                                 <img

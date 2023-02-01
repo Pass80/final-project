@@ -12,6 +12,7 @@ import { HiArrowNarrowLeft } from 'react-icons/hi';
 import { fetchAreas } from '../../Services/Services';
 import { Link } from 'react-router-dom';
 import WideCard from '../../Components/WideCard/WideCard';
+import SmallButton from '../../Components/SmallButton/SmallButton';
 
 const CategoryPage = () => {
     const [selectedCategory, setSelectedCategory] = useState();
@@ -53,7 +54,7 @@ const CategoryPage = () => {
                     <Link className="back-arrow-link" to={'/main'}>
                         <HiArrowNarrowLeft className="back_arrow" />
                     </Link>
-                    {/* <h2>Search</h2> */}
+                    <h2>Categories</h2>
                 </div>
                 <SearchBar setSearchResults={setSearchResults} />
             </header>
@@ -72,9 +73,10 @@ const CategoryPage = () => {
              wird der Area Abschnitt gezeigt. */}
             {selectedCategory && !searchResults && (
                 <section className="areas-section">
-                    <div className="title">
+                    <div className="title sm-btn">
                         <h3>Areas</h3>
-                        <p className="seeAll">See All</p>
+                        {/* <p className="seeAll">See All</p> */}
+                        <SmallButton />
                     </div>
                     <Carousel data={areas} button={true} type1={true} />
                 </section>

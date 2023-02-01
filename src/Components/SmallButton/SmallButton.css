@@ -1,0 +1,14 @@
+.small-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3rem;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    background-color: #000000;
+    color: #f1f1f1;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.3rem;
+}

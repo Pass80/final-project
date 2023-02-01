@@ -1,3 +1,35 @@
+@import url('../../variables.css');
+
+nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100vw;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 0 10px 2px var(--primary-color);
+    background-color: var(--primary-color);
+}
+nav svg {
+    margin: 0.5rem auto;
+}
+nav svg:is(:hover, :active, ) {
+    fill: var(--active-color);
+}
+.favorites-btn:is(:hover, :active) {
+    fill: red;
+}
+nav svg:hover path,
+nav svg:hover circle {
+    stroke: var(--active-color);
+}
+nav svg:first-of-type:hover .pathWhite {
+    stroke: #fff;
+}
+
 .nav-bar {
     display: flex;
     justify-content: center;
@@ -6,6 +38,6 @@
     left: 0;
     bottom: 0;
     border-radius: 2rem 2rem 0 0;
-    background-color: var(--primary-color);
+
     padding-block: 2rem;
 }

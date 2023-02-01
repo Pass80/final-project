@@ -142,6 +142,14 @@
     color: var(--text-color);
 } */
 
+.ingredientsPage {
+    margin-bottom: 10rem;
+}
+
+.ingredientsPage h2 {
+    margin-top: 2rem;
+}
+
 .ingredient-container {
     width: 100%;
     display: flex;
@@ -151,14 +159,7 @@
     border-radius: 16px;
     background: var(--primary-color);
     color: var(--text-color);
-}
-
-.ingredientsPage {
-    margin-bottom: 10rem;
-}
-
-.ingredientsPage h2 {
-    margin-top: 2rem;
+    overflow: hidden;
 }
 
 .ingredient-title {
@@ -179,6 +180,11 @@
 .ingredient-title p {
     margin-left: 1.5rem;
     font-weight: bold;
+    padding: 0;
+}
+
+.ingredient-link {
+    all: unset;
 }
 
 /* --------------- INSTRUCTIONS SEITE --------------- */
@@ -212,7 +218,9 @@
 }
 
 .VideoButton {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 80vw;
     height: 54px;
     padding: 16px 146px;
@@ -225,6 +233,13 @@
     color: var(--primary-color);
     text-decoration: none;
 }
+
+.VideoButton:active {
+    position: relative;
+    top: 1px;
+    color: orangered;
+}
+
 /* .favorite-btn {
 	position: absolute;
 	right: 1rem;

@@ -22,38 +22,40 @@ const FavoritesPage = () => {
         } else {
             setList(favoritesList);
         }
-    }, []);
+    }, [list.length]);
 
     useEffect(() => {
         //Die Funktion wird ausgeführt,
         // nachdem die detailsPage-Komponente montiert wurde
         showFavoritesList();
-    }, []);
+    }, [showFavoritesList]);
     return (
         <>
             <section className="favorite-page">
-                <h3>Favoriten</h3>
-                {list &&
-                    list.map((meal, index) => (
-                        <WideCard
-                            key={index}
-                            meal={meal}
-                            button={true}
-                            onDelete={() => {
-                                setList(
-                                    list.filter(
-                                        (mealItem) =>
-                                            mealItem.idMeal !== meal.idMeal
-                                    )
-                                );
-                            }}
-                        />
-                    ))}
-                {list.length === 0 && (
-                    <h2 className="no-items">No favorites to display </h2>
-                )}
+                <h3 className="favorite-heading">Favorites</h3>
+                <section className="search-results">
+                    {list &&
+                        list.map((meal, index) => (
+                            <WideCard
+                                key={index}
+                                meal={meal}
+                                button={true}
+                                onDelete={() => {
+                                    setList(
+                                        list.filter(
+                                            (mealItem) =>
+                                                mealItem.idMeal !== meal.idMeal
+                                        )
+                                    );
+                                }}
+                            />
+                        ))}
+                    {list.length === 0 && (
+                        <h2 className="no-items">No favorites to display </h2>
+                    )}
+                </section>
+                <NavBar />
             </section>
-            <NavBar />
         </>
     );
 };

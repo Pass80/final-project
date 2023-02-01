@@ -1,11 +1,18 @@
+.category-page {
+    width: 90%;
+    margin: 0 auto;
+}
+
 header {
     display: flex;
+    flex-direction: column;
     padding: 1rem auto;
 }
 .header-container {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    padding-top: 2rem;
 }
 
 .back-arrow-link {
@@ -21,9 +28,12 @@ header {
     left: -0.2rem;
 }
 
-.category-page {
-    width: 90%;
-    margin: 0 auto;
+.title.sm-btn {
+    margin-block: 1rem;
+}
+
+.title h3 {
+    margin-block: 1rem;
 }
 
 .results-section {
@@ -31,6 +41,7 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    padding-block: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 10rem;
     margin-bottom: 10rem;
 }
