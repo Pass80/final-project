@@ -1,0 +1,22 @@
+@import url("../../variables.css");
+.desktop-nav {
+	margin-left: auto;
+}
+
+.desktop-nav ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 5rem;
+	list-style: none;
+}
+
+.desktop-nav ul li {
+	font-size: 2rem;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.desktop-nav ul li:hover {
+	color: var(--active-color);
+}
