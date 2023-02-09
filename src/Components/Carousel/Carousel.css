@@ -10,8 +10,8 @@
 	display: flex;
 	justify-content: space-around;
 	gap: 0.5rem;
-    padding: .35rem 0;
-    overflow-x: hidden;
+	padding: 0.35rem 0;
+	overflow-x: hidden;
 }
 
 .previous-btn,

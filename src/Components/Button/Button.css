@@ -13,21 +13,32 @@
 } */
 
 .element-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 3rem;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    background-color: #cbd4de;
-    border: none;
-    cursor: pointer;
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 3rem;
+	font-size: 1.5rem;
+	padding: 1rem 2rem;
+	background-color: #cbd4de;
+	border: none;
+	cursor: pointer;
 }
 .element-btn:hover {
-    background-color: var(--active-color);
-    color: var(--primary-color);
+	background-color: var(--active-color);
+	color: var(--primary-color);
 }
 
 .btn-link {
-    all: unset;
+	all: unset;
+	/* width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+
+@media screen and (min-width: 750px) {
+	.element-btn {
+		width: max-content;
+	}
 }
