@@ -1,10 +1,12 @@
 .fixed-section {
 	position: fixed;
-	width: 71%;
+	width: 100%;
 	top: 0;
-	height: 18rem;
+	left: 0;
+	height: 28rem;
 	z-index: 10;
 	background-color: white;
+	padding: 0 10rem;
 }
 
 .display-section {
@@ -62,8 +64,7 @@
 	justify-content: center;
 	gap: 1rem;
 	background-color: white;
-	width: 100%;
-	padding: 2rem 1rem;
+	padding: 1rem 2rem;
 }
 
 .wide-screen button {
@@ -102,5 +103,9 @@
 		grid-template-columns: repeat(5, 1fr);
 		gap: 1rem;
 		margin-top: 2rem;
+		margin-bottom: 0;
+	}
+	.small-navbar {
+		display: none;
 	}
 }

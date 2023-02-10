@@ -107,7 +107,7 @@ const AreasPage = () => {
 				)}
 			</div>
 
-			<NavBar />
+			<NavBar className="small-navbar" />
 		</div>
 	);
 };

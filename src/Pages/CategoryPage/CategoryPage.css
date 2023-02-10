@@ -1,3 +1,18 @@
+.fixed-section {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 28rem;
+	z-index: 10;
+	background-color: white;
+	padding: 0 10rem;
+}
+
+.display-section {
+	position: relative;
+	top: 26rem;
+}
 .category-page {
 	width: 90%;
 	margin: 0 auto;
@@ -50,6 +65,9 @@ header {
 	.category-page {
 		width: 70%;
 	}
+	.search-bar {
+		width: 50%;
+	}
 	.wide-screen {
 		display: flex;
 	}
@@ -57,5 +75,6 @@ header {
 		grid-template-columns: repeat(5, 1fr);
 		gap: 1rem;
 		margin-top: 2rem;
+		margin-bottom: 0;
 	}
 }

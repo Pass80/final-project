@@ -20,3 +20,7 @@
 .desktop-nav ul li:hover {
 	color: var(--active-color);
 }
+
+.desktop-links {
+	all: unset;
+}
