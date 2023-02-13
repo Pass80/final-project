@@ -1,94 +1,94 @@
 /* --------------- INGREDIENTS SEITE --------------- */
 
 .MealBackground {
-    width: 100vw;
+	width: 100vw;
 }
 
 .MealSlider {
-    position: absolute;
-    top: 280px;
-    border-radius: 16px;
-    box-shadow: 0px -10px 40px rgba(101, 123, 154, 0.1);
-    background-color: var(--primary-color);
-    margin: 0 auto;
-    width: 100vw;
-    padding: 2rem;
+	position: absolute;
+	top: 280px;
+	border-radius: 16px;
+	box-shadow: 0px -10px 40px rgba(101, 123, 154, 0.1);
+	background-color: var(--primary-color);
+	margin: 0 auto;
+	width: 100vw;
+	padding: 2rem;
 }
 
 .MealSlider h2:nth-of-type(2) {
-    line-height: 130%;
+	line-height: 130%;
 }
 
 .FoodType {
-    /* margin-top: 6px; */
+	/* margin-top: 6px; */
 
-    /* margin-bottom: 25px; */
-    /* font-size: 16px; */
-    color: #748189;
-    line-height: 23.3px;
+	/* margin-bottom: 25px; */
+	/* font-size: 16px; */
+	color: #748189;
+	line-height: 23.3px;
 }
 
 .FoodType p:first-of-type {
-    font-weight: 600;
+	font-weight: 600;
 }
 
 /* Was macht das? */
 
 .FoodType h4 {
-    font-weight: 400;
-    padding-bottom: 2rem;
+	font-weight: 400;
+	padding-bottom: 2rem;
 }
 
 .favorite-btn {
-    font-weight: 700;
-    background: #042628;
-    color: var(--primary-color);
-    border-radius: 16px;
-    border: none;
-    padding: 10px 15px;
-    margin: 20px;
-    cursor: pointer;
+	font-weight: 700;
+	background: #042628;
+	color: var(--primary-color);
+	border-radius: 16px;
+	border: none;
+	padding: 10px 15px;
+	margin: 20px;
+	cursor: pointer;
 }
 
 .favorite-btn:active {
-    position: relative;
-    top: 1px;
-    color: orangered;
+	position: relative;
+	top: 1px;
+	color: orangered;
 }
 
 .heading-title {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
 }
 
 .ButtonsBox {
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+	width: 100vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 }
 
 .ToggleButtons {
-    width: 326px;
-    height: 54px;
-    background: #e6ebf2;
-    border-radius: 16px;
-    padding: 4px;
-    border: none;
+	width: 326px;
+	height: 54px;
+	background: #e6ebf2;
+	border-radius: 16px;
+	padding: 4px;
+	border: none;
 }
 
 .ToggleButtons button {
-    width: 159px;
-    height: 46px;
-    font-size: 16px;
-    font-weight: 700;
-    border-radius: 16px;
-    border: none;
-    padding: 12px 35px;
-    gap: 10px;
+	width: 159px;
+	height: 46px;
+	font-size: 16px;
+	font-weight: 700;
+	border-radius: 16px;
+	border: none;
+	padding: 12px 35px;
+	gap: 10px;
 }
 /* .ToggleButtons button:nth-of-type(1) {
     background: #042628;
@@ -100,13 +100,15 @@
 } */
 
 .selected {
-    background: #042628;
-    color: var(--primary-color);
+	background: #042628;
+	color: var(--primary-color);
+	cursor: pointer;
 }
 
 .unselected {
-    background: #e6ebf2;
-    color: #042628;
+	background: #e6ebf2;
+	color: #042628;
+	cursor: pointer;
 }
 
 /* .ToggleButtons button:nth-of-type(1):hover {
@@ -120,140 +122,133 @@
 } */
 
 .Ingredients {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px;
-    gap: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 16px;
+	gap: 10px;
 }
 
-/* .Ingredients p {
-    width: max-content;
-    display: flex;
-    justify-content: flex-start; */
-/* vertikal zentriert */
-/* align-items: center;
-    height: 52px;
-    font-size: 18px;
-    font-weight: 700;
-    box-shadow: 0px 2px 16px rgba(6, 51, 54, 0.1); /* rgba find ich gut ;)  */
-/* border-radius: 16px;
-    background: var(--primary-color);
-    color: var(--text-color);
-} */
-
 .ingredientsPage {
-    margin-bottom: 10rem;
+	margin-bottom: 10rem;
 }
 
 .ingredientsPage h2 {
-    margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 .ingredient-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 2px 16px rgba(6, 51, 54, 0.1); /* rgba find ich gut ;)  */
-    border-radius: 16px;
-    background: var(--primary-color);
-    color: var(--text-color);
-    overflow: hidden;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 0px 2px 16px rgba(6, 51, 54, 0.1); /* rgba find ich gut ;)  */
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+		rgba(0, 0, 0, 0.23) 0px 6px 6px;
+	border-radius: 16px;
+	background: var(--primary-color);
+	color: var(--text-color);
+	overflow: hidden;
+	cursor: pointer;
 }
 
 .ingredient-title {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
 }
 
 .ingredient-title span {
-    color: orangered;
-    font-size: 1.4rem;
-    font-weight: bold;
-    margin-left: 1.5rem;
-    margin-bottom: 0.5rem;
+	color: orangered;
+	font-size: 1.4rem;
+	font-weight: bold;
+	margin-left: 1.5rem;
+	margin-bottom: 0.5rem;
 }
 
 .ingredient-title p {
-    margin-left: 1.5rem;
-    font-weight: bold;
-    padding: 0;
+	margin-left: 1.5rem;
+	font-weight: bold;
+	padding: 0;
 }
 
 .ingredient-link {
-    all: unset;
+	all: unset;
+	width: 100%;
 }
 
 /* --------------- INSTRUCTIONS SEITE --------------- */
 
 .Instructions {
-    margin-bottom: 10rem;
+	margin-bottom: 10rem;
 }
 
 .instructionsPage {
-    display: none;
+	display: none;
 }
 
 .instructionsPage h2 {
-    margin-top: 2rem;
+	margin-top: 2rem;
 }
 
 .InstructionText {
-    width: 80vw;
-    /* height: max-content; */
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 16px;
-    margin: 24px 24px 18px 24px;
-    box-shadow: 0px 2px 16px rgba(6, 51, 54, 0.1);
-    border-radius: 16px;
-    background: var(--primary-color);
-    font-size: 16px;
-    font-weight: bold;
-    white-space: pre-line;
+	width: 80vw;
+	/* height: max-content; */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 16px;
+	margin: 24px 24px 18px 24px;
+	box-shadow: 0px 2px 16px rgba(6, 51, 54, 0.1);
+	border-radius: 16px;
+	background: var(--primary-color);
+	font-size: 16px;
+	font-weight: bold;
+	white-space: pre-line;
 }
 
 .VideoButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80vw;
-    height: 54px;
-    padding: 16px 146px;
-    margin: 18px 24px;
-    background-color: var(--active-color);
-    border: none;
-    border-radius: 16px;
-    font-size: 16px;
-    font-weight: 700;
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-.VideoButton:active {
-    position: relative;
-    top: 1px;
-    color: orangered;
-}
-
-/* .favorite-btn {
-	position: absolute;
-	right: 1rem;
-	top: 1rem;
-	padding: .5rem;
-	aspect-ratio: 1/1;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: .75rem;
-	border: none;
+	width: 80vw;
+	height: 54px;
+	padding: 16px 146px;
+	margin: 18px 24px;
 	background-color: var(--active-color);
+	border: none;
+	border-radius: 16px;
+	font-size: 16px;
+	font-weight: 700;
 	color: var(--primary-color);
-	font-size: 1.5rem;
-	font-weight: 600;
-	cursor: pointer;
-} */
+	text-decoration: none;
+}
+
+.VideoButton:active {
+	position: relative;
+	top: 1px;
+	color: orangered;
+}
+
+@media screen and (min-width: 750px) {
+	.MealSlider {
+		width: 40vw;
+		top: 3rem;
+		left: 51vw;
+	}
+	.MealBackground {
+		position: fixed;
+		top: 3rem;
+		left: 0;
+		width: 50vw;
+		border-top-right-radius: 3rem;
+		border-bottom-right-radius: 3rem;
+	}
+	.InstructionText {
+		width: 90%;
+	}
+	.VideoButton {
+		width: 20vw;
+	}
+}

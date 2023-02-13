@@ -1,43 +1,43 @@
-@import '../../variables.css';
+@import "../../variables.css";
 
 .wide-card {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: #ffffff;
-    padding: 1rem;
-    border-radius: 1rem;
-    margin: 0.5rem auto;
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #ffffff;
+	padding: 1rem;
+	border-radius: 1rem;
+	margin: 0.5rem auto;
 }
 
 .remove-btn {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.8rem;
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 1.8rem;
 }
 
 .image-container1 {
-    width: 8rem;
-    height: 8rem;
-    border-radius: 1rem;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 1rem;
 }
 
 .wide-card img {
-    width: 8rem;
-    height: 8rem;
-    object-fit: contain;
-    border-radius: 1rem;
+	width: 8rem;
+	height: 8rem;
+	object-fit: contain;
+	border-radius: 1rem;
 }
 
 .category-name {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 1rem;
 }
 
 /* .category-name span {
@@ -45,106 +45,106 @@
 } */
 
 .meal-infos {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    gap: 1rem;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+	gap: 1rem;
 }
 
 .point {
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-    /* background-color: var(--active-color); */
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	/* background-color: var(--active-color); */
 }
 
 .category-name-span {
-    font-size: 1.2rem;
-    font-weight: bold;
+	font-size: 1.2rem;
+	font-weight: bold;
 }
 
 .details-arrow {
-    font-size: 2rem;
+	font-size: 2rem;
 }
 
 .details-arrow:active {
-    position: relative;
-    right: -0.1rem;
+	position: relative;
+	right: -0.1rem;
 }
 
 .details-arrow-link {
-    all: unset;
+	all: unset;
 }
 
 /* colors for the different categories */
 
 .beef-color {
-    background-color: #9b5e3a;
+	background-color: #9b5e3a;
 }
 
 .breakfast-color {
-    background-color: #f7c873;
+	background-color: #f7c873;
 }
 
 .chicken-color {
-    background-color: #d5b5b5;
+	background-color: #d5b5b5;
 }
 
 .goat-color {
-    background-color: #aaa9ad;
+	background-color: #aaa9ad;
 }
 
 .lamb-color {
-    background-color: #8b9dc3;
+	background-color: #8b9dc3;
 }
 
 .miscellaneous-color {
-    background-color: #f0e68c;
+	background-color: #f0e68c;
 }
 
 .pasta-color {
-    background-color: #cd5c5c;
+	background-color: #cd5c5c;
 }
 
 .pork-color {
-    background-color: #ffa07a;
+	background-color: #ffa07a;
 }
 
 .seafood-color {
-    background-color: #87ceeb;
+	background-color: #87ceeb;
 }
 
 .side-color {
-    background-color: #dda0dd;
+	background-color: #dda0dd;
 }
 
 .starter-color {
-    background-color: #778899;
+	background-color: #778899;
 }
 
 .vegan-color {
-    background-color: #90ee90;
+	background-color: #90ee90;
 }
 
 .vegetarian-color {
-    background-color: #287228;
+	background-color: #287228;
 }
 
 .default-color {
-    background-color: #e2fa04;
+	background-color: #e2fa04;
 }
 
 .country-flag-container {
-    margin-left: auto;
-    margin-right: 1rem;
-    width: 3rem;
-    height: 3rem;
+	margin-left: auto;
+	margin-right: 1rem;
+	width: 3rem;
+	height: 3rem;
 }
 
 .country-flag-container .flag {
-    width: 100%;
-    width: 3rem;
-    height: 3rem;
+	width: 100%;
+	width: 3rem;
+	height: 3rem;
 }
