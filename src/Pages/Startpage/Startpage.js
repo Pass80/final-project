@@ -288,8 +288,14 @@ const StartPage = () => {
 							d="M8.50002 0.779297H2.40002V42.5373H8.50002V0.779297Z"
 							fill="#EDC75E"
 						/>
-						<path d="M19.1 5.35156H10.1V47.1096H19.1V5.35156Z" fill="#D2953D" />
-						<path d="M16.2 5.35156H10.1V47.1096H16.2V5.35156Z" fill="#EDC75E" />
+						<path
+							d="M19.1 5.35156H10.1V47.1096H19.1V5.35156Z"
+							fill="#D2953D"
+						/>
+						<path
+							d="M16.2 5.35156H10.1V47.1096H16.2V5.35156Z"
+							fill="#EDC75E"
+						/>
 						<path
 							d="M31.4303 1.82512L22.5536 0.31543L15.768 41.5014L24.6447 43.011L31.4303 1.82512Z"
 							fill="#D2953D"
@@ -826,7 +832,9 @@ const StartPage = () => {
 			{/*  <img src={logo} alt="logo" /> */}
 			<div className="start-info">
 				<h2>All recipe you needed</h2>
-				<p>5000+ healthy recipes made by People for your healthy life</p>
+				<p>
+					5000+ healthy recipes made by People for your healthy life
+				</p>
 				<Link to="/main">
 					<button className="start-btn">Get Started</button>
 				</Link>
@@ -835,7 +843,5 @@ const StartPage = () => {
 		</div>
 	);
 };
-
-// export default StartPage;
 
 export default StartPage;
