@@ -9,7 +9,7 @@
 
 .card {
 	box-shadow: 0 0 10px 0px lightgray;
-	aspect-ratio: 1 / .9;
+	aspect-ratio: 1 / 0.9;
 	padding: 1rem;
 	cursor: pointer;
 	border-radius: 1rem;
@@ -18,7 +18,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	min-width: 90px;
-	max-width: 150px;
+	/* max-width: 150px; */
 }
 .card:hover {
 	box-shadow: 0 0 0 0 lightgray;
@@ -39,4 +39,14 @@
 
 .card-link {
 	all: unset;
+}
+
+@media screen and (min-width: 750px) {
+	.card {
+		width: 100%;
+	}
+	.card-link {
+		display: block;
+		width: 100%;
+	}
 }

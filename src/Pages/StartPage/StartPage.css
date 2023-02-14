@@ -129,7 +129,6 @@
 .punktKlein6 {
 	bottom: 27%;
 	left: 43%;
-
 }
 /* Blätter */
 .blattOL {
@@ -190,4 +189,10 @@
 	bottom: 0;
 	background: #e0e0e0;
 	border-radius: 100px;
+}
+
+@media screen and (min-width: 750px) {
+	.start-btn {
+		width: 20%;
+	}
 }

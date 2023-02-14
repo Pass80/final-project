@@ -1,35 +1,77 @@
-@import url('../../variables.css');
+@import url("../../variables.css");
 .main-page main {
-    background-color: #f1f5f5;
-    width: 90%;
-    /* height: calc(100vh - 6.5rem); */
-    padding-top: 6rem;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* overflow: hidden; */
+	background-color: #f1f5f5;
+	width: 90%;
+	/* height: calc(100vh - 6.5rem); */
+	padding-top: 6rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* overflow: hidden; */
 }
 
 main h3 {
-    font-size: 2rem;
-    padding-top: 3rem;
-    padding-bottom: 1rem;
+	font-size: 2rem;
+	padding-top: 3rem;
+	padding-bottom: 1rem;
 }
 
 .title {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
 .title .seeAll {
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: var(--active-color);
-    cursor: pointer;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: var(--active-color);
+	cursor: pointer;
 }
 
 .areas-section {
-    padding-block: 1rem;
+	padding-block: 1rem;
+}
+
+.desktop-categories-section {
+	width: 90%;
+	display: none;
+	grid-template-columns: repeat(5, 1fr);
+}
+
+.main-meal-desktop {
+	display: none;
+}
+
+@media screen and (min-width: 750px) {
+	.desktop-categories-section {
+		display: grid;
+		align-items: center;
+		justify-content: center;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		gap: 1rem 1rem;
+		grid-auto-flow: row;
+		grid-template-areas:
+			". . . . ."
+			". day-meal day-meal day-meal ."
+			". day-meal day-meal day-meal ."
+			". . . . .";
+		margin: 3rem auto;
+	}
+
+	.main-meal-desktop {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		width: 30%;
+		grid-area: day-meal;
+		margin: 0 auto;
+	}
+
+	.main-meal {
+		display: none;
+	}
 }

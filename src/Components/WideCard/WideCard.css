@@ -6,7 +6,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
-	background-color: #ffffff;
+	background-color: #cbd4de;
 	padding: 1rem;
 	border-radius: 1rem;
 	margin: 0.5rem auto;
@@ -76,6 +76,7 @@
 
 .details-arrow-link {
 	all: unset;
+	cursor: pointer;
 }
 
 /* colors for the different categories */
@@ -147,4 +148,10 @@
 	width: 100%;
 	width: 3rem;
 	height: 3rem;
+}
+
+@media screen and (min-width: 750px) {
+	.wide-card {
+		width: 50%;
+	}
 }
