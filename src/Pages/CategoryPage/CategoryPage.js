@@ -51,6 +51,21 @@ const CategoryPage = () => {
 
 	return (
 		<div className="category-page">
+			<div className="mobile-header">
+				<header>
+					<div className="header-container">
+						<Link className="back-arrow-link" to={"/main"}>
+							<HiArrowNarrowLeft className="back_arrow" />
+						</Link>
+						<h2>Categories</h2>
+					</div>
+				</header>
+				<SearchBar
+					className="search-bar"
+					setSearchResults={setSearchResults}
+				/>
+			</div>
+
 			<div className="fixed-section">
 				<header>
 					<div className="header-container">
@@ -94,17 +109,17 @@ const CategoryPage = () => {
 				)}
 				{/* Wenn der searchResults-Wert  null ist, 
              wird der Area Abschnitt gezeigt. */}
-				<div className="buttons-container">
-					{selectedCategory && !searchResults && (
-						<section className="areas-section">
-							<div className="title sm-btn">
-								<h3>Areas</h3>
-								<SmallButton />
-							</div>
-							<Carousel data={areas} button={true} type1={true} />
-						</section>
-					)}
-				</div>
+				{/* <div className="buttons-container"> */}
+				{selectedCategory && !searchResults && (
+					<section className="areas-section">
+						<div className="title sm-btn">
+							<h3>Areas</h3>
+							<SmallButton />
+						</div>
+						<Carousel data={areas} button={true} type1={true} />
+					</section>
+				)}
+				{/* </div> */}
 
 				{/* Wenn der searchResults-Wert  null ist, 
              wird der Area Abschnitt gezeigt. */}

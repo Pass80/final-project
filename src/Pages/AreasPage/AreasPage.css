@@ -1,4 +1,5 @@
 .fixed-section {
+	display: none;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -9,10 +10,10 @@
 	padding: 0 10rem;
 }
 
-.display-section {
+/* .display-section {
 	position: relative;
 	top: 26rem;
-}
+} */
 
 .header-container {
 	display: flex;
@@ -45,7 +46,7 @@
 }
 
 .results-section {
-	margin-top: 10rem;
+	/* margin-top: 10rem; */
 	width: 100%;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
@@ -73,7 +74,7 @@
 
 .buttons-container {
 	width: 100%;
-	display: flex;
+	display: none;
 	flex-wrap: wrap;
 	align-items: center;
 	gap: 2rem;
@@ -87,8 +88,15 @@
 }
 
 @media screen and (min-width: 750px) {
+	.fixed-section {
+		display: block;
+	}
 	.category-page {
 		width: 70%;
+	}
+	.display-section {
+		position: relative;
+		top: 26rem;
 	}
 	.search-bar {
 		width: 50%;
@@ -107,5 +115,8 @@
 	}
 	.small-navbar {
 		display: none;
+	}
+	.buttons-container {
+		display: flex;
 	}
 }

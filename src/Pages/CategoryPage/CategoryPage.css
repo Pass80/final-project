@@ -1,5 +1,6 @@
 .fixed-section {
-	position: fixed;
+	display: none;
+	/* position: fixed; */
 	width: 100%;
 	top: 0;
 	left: 0;
@@ -9,10 +10,10 @@
 	padding: 0 10rem;
 }
 
-.display-section {
+/* .display-section {
 	position: relative;
 	top: 34rem;
-}
+} */
 .category-page {
 	width: 90%;
 	margin: 0 auto;
@@ -62,8 +63,15 @@ header {
 }
 
 @media screen and (min-width: 750px) {
+	.fixed-section {
+		display: block;
+	}
 	.category-page {
 		width: 70%;
+	}
+	.display-section {
+		position: relative;
+		top: 34rem;
 	}
 	.search-bar {
 		width: 50%;
@@ -76,5 +84,11 @@ header {
 		gap: 1rem;
 		margin-top: 2rem;
 		margin-bottom: 0;
+	}
+	.mobile-header {
+		display: none;
+	}
+	.buttons-container {
+		display: flex;
 	}
 }

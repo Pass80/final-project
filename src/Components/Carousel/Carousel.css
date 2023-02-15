@@ -4,6 +4,7 @@
 	padding-block: 0.5rem;
 	display: flex;
 	flex-direction: column;
+	margin-bottom: 10rem;
 }
 
 .carousel-cards-container {
